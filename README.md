@@ -5,4 +5,4 @@ This is the supplementary material of the publication "EddyNet: A Deep Neural Ne
 ", from R. Lguensat et al., submitted. Pre-print at: 
 
 
-![](../master/EddyNet/unetschema.png)
+![](../EddyNet/unetschema.png)
