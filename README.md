@@ -15,8 +15,12 @@ Eddynet is an U-Net like architecture (a convolutional encoder-decoder followed 
 > Eddynet is easily modulable and can be used for further studies such as adding new information (e.g. Sea Surface Temperature), or training with another ground truth.
 
 # Some examples of the segmentation
-![](example_eddynet.png)<br />
+![](example_eddynet.png)
+<hr>
 
-![](example_eddynet2.png)<br />
+
+![](example_eddynet2.png)
+<hr>
+
 
 ![](example_eddynet3.png)
