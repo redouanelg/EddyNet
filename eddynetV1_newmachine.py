@@ -10,9 +10,6 @@ Eddynet: A convolutional encoder-decoder for the pixel-wise segmentation of ocea
 
 """
 
-import os
-os.environ["CUDA_VISIBLE_DEVICE"]=''
-
 ############################################# Imports
 from keras.models import Model, load_model
 from keras.layers.core import Activation, Reshape, Permute
@@ -490,46 +487,3 @@ for i in randpatches:
 ##############################
     
     
-#### Class weights     
-#labels_dict=[sum(sum(label_train==i))[0] for i in range(nbClass)]
-#            
-#del label_train
-#
-##from sklearn.utils import compute_class_weight
-##class_weight=compute_class_weight('balanced',np.unique(label_train),label_train.flatten())
-#CW=[np.sum(labels_dict) / float((nbClass * labels_dict[i])) for i in range(nbClass)] #scikitlearn
-##
-##freqs=[labels_dict[i]/float(np.sum(labels_dict))  for i in range(nbClass)]
-##CW=[np.median(freqs)/freqs[i]  for i in range(nbClass)]
-###
-#CW=[1.,20.,34.]
-#sample_weight=np.reshape(BB_label, (len(BB_label), pheight*pwidth)).copy().astype('float32')
-## warning: pay attention if one of your weights is 0,1,2 or 3
-#sample_weight[sample_weight==1]=CW[1]
-#sample_weight[sample_weight==0]=CW[0]  #important to start with 1  before 0 class_weight[0] is equal to 1
-#sample_weight[sample_weight==2]=CW[2]
-
-##################################
-#def jaccard_loss(y_true, y_pred):
-#    return 1 - mean_jaccard_coef(y_true, y_pred)
-#
-#def dice_coef_hard_anti(y_true, y_pred):
-#    y_true_anti = y_true[:,:,1]
-#    y_pred_anti = K.round(y_pred[:,:,1])
-#    intersection_anti = K.sum(y_true_anti * y_pred_anti)
-#    return (2 * intersection_anti + smooth) / (K.sum(y_true_anti)+ K.sum(y_pred_anti) + smooth)
-#
-#def dice_coef_hard_cyc(y_true, y_pred):
-#    y_true_cyc = y_true[:,:,2]
-#    y_pred_cyc = K.round(y_pred[:,:,2])
-#    intersection_cyc = K.sum(y_true_cyc * y_pred_cyc)
-#    return (2 * intersection_cyc + smooth) / (K.sum(y_true_cyc) + K.sum(y_pred_cyc) + smooth)
-#
-#def dice_coef_hard_nn(y_true, y_pred):
-#    y_true_nn = y_true[:,:,0]
-#    y_pred_nn = K.round(y_pred[:,:,0])
-#    intersection_nn = K.sum(y_true_nn * y_pred_nn)
-#    return (2 * intersection_nn + smooth) / (K.sum(y_true_nn) + K.sum(y_pred_nn) + smooth)
-#    
-#def mean_dice_coef_hard(y_true, y_pred):
-#    return (dice_coef_hard_cyc(y_true, y_pred)+dice_coef_hard_nn(y_true, y_pred)+dice_coef_hard_anti(y_true, y_pred))/3.
