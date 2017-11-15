@@ -2,7 +2,7 @@
 EddyNet: A Deep Neural Network For Pixel-Wise Classification of Oceanic Eddies
 
 This is the supplementary material of the publication "EddyNet: A Deep Neural Network For Pixel-Wise Classification of Oceanic Eddies
-", from R. Lguensat et al., submitted. Pre-print at: https://arxiv.org/abs/1711.03954
+", from R. Lguensat et al., submitted. Pre-print at: https://arxiv.org/abs/1711.03954 , I'm looking for somewhere to upload the training data (5 Go) then I'll share the link here. 
 
 Eddynet is an U-Net like architecture (a convolutional encoder-decoder followed by a pixel-wise classification layer + skip connections). <br />
 
