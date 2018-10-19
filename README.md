@@ -1,5 +1,5 @@
 
-###### Note: Like all the Eddy detection algorithms (there is no consensus on the best method to use), the ground truth used in this work has some ghost eddies (eddies that are missed between two temporal detections). Still working on an improved dataset.
+###### Note: Like all the Eddy detection algorithms (there is no consensus on the best method to use), the ground truth has some ghost eddies (eddies that are missed between two temporal detections). Still working on an improved dataset.
 
 # EddyNet
 
