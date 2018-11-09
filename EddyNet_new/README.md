@@ -1,4 +1,5 @@
-# EddyNet
-EddyNet: A Deep Neural Network For Pixel-Wise Classification of Oceanic Eddies
+# Convolutional Neural Networks for the Segmentation of Oceanic Eddies from Altimetric Maps
 
-This is the supplementary material of the publication "EddyNet: A Deep Neural Network For Pixel-Wise Classification of Oceanic Eddies", from R. Lguensat et al., accepted as an oral presentation for IGARSS2018. Pre-print at: https://arxiv.org/abs/1711.03954
+I am updating the repo with new code and results from the article "Convolutional Neural Networks for the Segmentation of Oceanic Eddies from Altimetric Maps" submitted to Remote Sensing. Preprint can be found [here](https://www.researchgate.net/publication/328837669_Convolutional_Neural_Networks_for_the_Segmentation_of_Oceanic_Eddies_from_Altimetric_Maps) 
+
+I already made public some jupyter notebooks and data to let anyone start using it.
