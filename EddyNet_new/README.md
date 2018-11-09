@@ -1,4 +1,6 @@
-##### Complete code will be published upon paper acceptance.
+##### Complete code will be published upon paper acceptance. 
+
+If you want to try, I recommend EddyResNet over EddyNet.
 
 # Convolutional Neural Networks for the Segmentation of Oceanic Eddies from Altimetric Maps
 
